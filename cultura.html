@@ -1,0 +1,607 @@
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+ <title>lugares turisticos/El Villar</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200&icon_names=home" />
+<style>
+.material-symbols-outlined {
+  font-variation-settings:
+  'FILL' 0,
+  'wght' 400,
+  'GRAD' 0,
+  'opsz' 24
+
+}
+</style>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Elsie:wght@400;900&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Elsie:wght@400;900&family=Waterfall&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Elsie:wght@400;900&family=Nabla&family=Waterfall&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Elsie:wght@400;900&family=Nabla&family=Rum+Raisin&family=Waterfall&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Elsie:wght@400;900&family=Nabla&family=Purple+Purse&family=Rum+Raisin&family=Waterfall&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Courier+Prime:ital,wght@0,400;0,700;1,400;1,700&family=Elsie:wght@400;900&family=Nabla&family=Pinyon+Script&family=Purple+Purse&family=Rum+Raisin&family=Waterfall&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Ballet:opsz@16..72&family=Bricolage+Grotesque:opsz,wght@12..96,200..800&family=IBM+Plex+Sans:ital,wght@0,100..700;1,100..700&family=Cinzel:wght@400..900&family=Courier+Prime:ital,wght@0,400;0,700;1,400;1,700&family=Elsie:wght@400;900&family=Great+Vibes&family=IM+Fell+Great+Primer:ital@0;1&family=Nabla&family=Original+Surfer&family=Pinyon+Script&family=Purple+Purse&family=Rum+Raisin&family=Waterfall&display=swap" rel="stylesheet">
+<style>
+
+body {
+    margin: 0;
+    font-family: Georgia, serif;
+    background: linear-gradient(to bottom , #32152f, #f8f0e5,rgb(25, 5, 31), rgb(21, 2, 34))
+    
+}
+
+.cultura {
+     position: relative;
+    min-height: 750px;
+    overflow: hidden;
+    isolation: isolate;
+    background: #32102F;
+}
+
+.encabezado-cultura {
+    text-align: center;
+    margin-bottom: 40px;
+    margin-top: 30px;
+}
+
+.encabezado-cultura .subtitulo {
+    font-family: "Great Vibes", cursive;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 40px;
+    color: #63451a;
+    margin: 0 0 5px;
+    text-shadow: 2px 3px 4px rgb(251, 255, 40);
+}
+
+.encabezado-cultura h2 {
+    font-family: "Elsie", serif;
+    font-weight: 900;
+    font-style: normal;
+    font-size: 55px;
+    margin: 0;
+    color: #32152f;
+}
+
+.decoracion {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 12px;
+    margin: 15px auto;
+}
+
+.decoracion span {
+    width: 90px;
+    height: 2px;
+    background: #c39a48;
+}
+
+.decoracion b {
+    font-size: 25px;
+    color: #c39a48;
+}
+
+.descripcion-cultura {
+    font-family: "IM Fell Great Primer", serif;
+    font-weight: 400;
+    font-style: italic;
+    max-width: 650px;
+    margin: auto;
+    line-height: 1.7;
+    color: #383034;
+    font-size: 20px;
+}
+
+/* TARJETAS */
+.tarjetas-cultura {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 25px;
+    max-width: 1100px;
+    margin: 40px auto 0;
+}
+
+.tarjeta {
+    background: #fffaf3;
+    border-radius: 18px;
+    overflow: hidden;
+    box-shadow: 0 8px 20px rgba(50, 21, 47, 0.12);
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.tarjeta:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 15px 30px rgba(50, 21, 47, 0.2);
+}
+
+.tarjeta img {
+    width: 100%;
+    height: 220px;
+    object-fit: cover;
+    display: block;
+}
+
+.contenido-tarjeta {
+    padding: 22px;
+    text-align: center;
+}
+
+.icono {
+    display: inline-flex;
+    width: 48px;
+    height: 48px;
+    border-radius: 50%;
+    background: #421d3e;
+    color: #e8c16e;
+    align-items: center;
+    justify-content: center;
+    font-size: 23px;
+    margin-top: -45px;
+    position: relative;
+    border: 3px solid #fffaf3;
+}
+
+.contenido-tarjeta h3 {
+    font-size: 25px;
+    margin: 8px 0;
+}
+
+.contenido-tarjeta p {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    min-height: 50px;
+    color: #66565f;
+}
+
+.boton {
+    display: inline-block;
+    margin-top: 10px;
+    padding: 12px 25px;
+    border-radius: 30px;
+    background: #421d3e;
+    color: white;
+    text-decoration: none;
+    font-family: Arial, sans-serif;
+    transition: background 0.3s;
+}
+
+.boton:hover {
+    background: #9c7131;
+}
+
+
+.ventana {
+    position: fixed;
+    inset: 0;
+    background: rgba(25, 10, 26, 0.78);
+    display: none;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+    z-index: 1000;
+    overflow-y: auto;
+    
+}
+
+.ventana:target {
+    display: flex;
+}
+
+.contenido-ventana {
+    position: relative;
+    background: #fffaf3;
+    width: 750px;
+    max-width: 100%;
+    max-height: 90vh;
+    overflow-y: auto;
+    padding: 35px;
+    border-radius: 20px;
+    box-shadow: 0 15px 40px rgba(0,0,0,0.3);
+    font-family: Arial, sans-serif;
+    
+}
+
+.contenido-ventana h2 {
+    font-family: Georgia, serif;
+    font-size: 32px;
+    margin-top: 0;
+    color: #421d3e;
+}
+
+.contenido-ventana p {
+    line-height: 1.8;
+    color: #55464f;
+}
+
+.contenido-ventana img {
+    width: 100%;
+    max-height: 300px;
+    object-fit: cover;
+    border-radius: 12px;
+}
+
+.cerrar {
+    position: absolute;
+    right: 18px;
+    top: 12px;
+    color: #421d3e;
+    font-size: 30px;
+    text-decoration: none;
+}
+
+/* PIE DECORATIVO */
+.pie-cultura {
+    font-family: "Ballet", cursive;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+    text-align: center;
+    font-size: 30px;
+    color: gold;
+    margin-top: 45px;
+    letter-spacing: 2px;
+}
+
+/* ADAPTACIÓN A CELULARES */
+@media (max-width: 768px) {
+    #cultura {
+        padding: 45px 5%;
+    }
+
+    .encabezado-cultura h2 {
+        font-size: 40px;
+    }
+
+    .tarjetas-cultura {
+        grid-template-columns: 1fr;
+        max-width: 420px;
+    }
+
+    .contenido-ventana {
+        padding: 28px 20px;
+    }
+}
+</style>
+</head>
+
+<body>
+      <header>
+       <div class="logo">
+         <img src="img/GAM-removebg-preview.png" alt="El Villar"> 
+         <div>
+            <h1>Descubre</h1>
+             
+            <h2> El Villar</h2>
+         </div>
+         <style> 
+         
+               .logo h1{
+                 font-family: "Waterfall", cursive;
+                 font-weight: 500;
+                 font-style: normal;
+                 color: rgb(241, 158, 172);
+                 text-shadow: 2px 3px 4px rgb(245, 252, 249);
+                 font-size: 40px;
+                 justify-content: left;
+                }
+               .logo h2{
+                 font-family: "Elsie", serif;
+                 font-weight: 900;
+                 font-style: normal;
+                 color: azure;
+                 font-size: 40px;
+                 margin-top: 40px;
+                }
+                header {
+                 background-color: #410449;
+                 color: white;
+                 padding: 5px 5px;
+                 display: flex;
+                 justify-content: space-between;
+                 align-items: center;
+                 position: sticky;
+                 top: 0;
+                 z-index: 1000;
+
+                 box-shadow:
+                 0 5px 10px rgba(0, 0, 0, 0.15),
+                 0 15px 25px rgba(0, 0, 0, 0.15);
+                 transition: 0.3s;
+                }  
+               .logo {
+                 display: flex;
+                 align-items: center;
+                 gap: 15px;
+                 line-height: 0%;
+                }
+               nav {
+                 display: flex;
+                 gap: 5px;
+                  font-family: "Rum Raisin", sans-serif;
+                 font-weight: 400;
+                 font-style: normal;
+                 letter-spacing: 2px;
+                }
+               nav a {
+                 color: white;
+                  text-decoration: none;
+
+                   padding: 10px 15px;
+
+                 border-radius: 20px;
+
+                 transition: 0.3s;
+                }
+               nav a:hover {
+                  background-color: #d10d0d;
+                   font-family: "Nabla", system-ui;
+                  font-optical-sizing: auto;
+                  font-weight: 400;
+                  font-style: normal;
+                  font-variation-settings:
+                  "EDPT" 100,
+                  "EHLT" 12;
+                 color: #11afa7;
+                 transform: translateY(-2px);
+                 transform: translateY(-10px);
+
+                  box-shadow:
+                 0 10px 20px rgba(0, 0, 0, 0.2),
+                   0 20px 35px rgba(0, 0, 0, 0.2);
+                }
+              nav a.activo {
+                 background-color: #ffffff;
+                   color: #000000;
+                 font-family: Georgia, 'Times New Roman', Times, serif;
+                 font-family: "Rum Raisin", sans-serif;
+                 font-weight: 400;
+                 font-style: normal;
+                  letter-spacing: 2px;
+                }
+
+               .logo img {
+                 width: 75px;
+                 height: 75px;
+                 object-fit: contain;
+                 filter: drop-shadow(3px 5px 5px rgba(0, 0, 0, 0.5)); 
+
+                }
+         </style>
+        </div>
+
+        <nav>
+        <a href="index.html"><span class="material-symbols-outlined">home</span>Inicio</a>
+        <a href="destinos.html">🏞️ Atractivos</a>
+        
+        <a href="#" class="activo">🎭 Cultura</a>
+        <a href="contacto.html">📞 Contacto</a>
+        </nav>
+    </header>
+    
+    </div>
+
+<section id="cultura">
+
+    <div class="encabezado-cultura">
+        <p class="subtitulo">Descubre nuestras raíces</p>
+
+        <h2>Nuestra Cultura</h2>
+
+        <div class="decoracion">
+            <span></span>
+            <b>❦</b>
+            <span></span>
+        </div>
+
+        <p class="descripcion-cultura">
+            Tradiciones, costumbres y expresiones que mantienen
+            viva la identidad de nuestro querido municipio de El Villar.
+        </p>
+    </div>
+
+    <div class="tarjetas-cultura">
+
+     
+        <article class="tarjeta">
+            <img src="img/villarejo 2.jpeg"
+                 alt="Tradiciones de El Villar">
+
+            <div class="contenido-tarjeta">
+                <span class="icono">❀</span>
+                <h3>Tradiciones</h3>
+
+                <p>
+                    Conoce las costumbres y expresiones culturales
+                    que forman parte de nuestra identidad.
+                </p>
+
+                <a href="#ventana-tradiciones" class="boton">
+                    Ver más →
+                </a>
+            </div>
+        </article>
+
+   
+        <article class="tarjeta">
+            <img src="img/virgen.jpeg" height="180"
+                 alt="Festividades de El Villar">
+
+            <div class="contenido-tarjeta">
+                <span class="icono">✧</span>
+                <h3>Festividades</h3>
+
+                <p>
+                    Descubre las celebraciones y actividades
+                    que reúnen a nuestra comunidad.
+                </p>
+
+                <a href="#ventana-festividades" class="boton">
+                    Ver más →
+                </a>
+            </div>
+        </article>
+
+    
+        <article class="tarjeta">
+            <img src="img/comida.jpeg"
+                 alt="Gastronomía">
+
+            <div class="contenido-tarjeta">
+                <span class="icono">✿</span>
+                <h3>Gastronomía</h3>
+
+                <p>
+                    Explora las expresiones artísticas,
+                    vestimentas y costumbres de la región.
+                </p>
+
+                <a href="#ventana-artes" class="boton">
+                    Ver más →
+                </a>
+            </div>
+        </article>
+
+    </div>
+
+    <p class="pie-cultura">
+        Las raíces de nuestro pueblo nos dan identidad.
+    </p>
+
+</section>
+
+
+<div id="ventana-tradiciones" class="ventana">
+    <div class="contenido-ventana">
+
+        <a href="#targeta" class="cerrar" aria-label="Cerrar">×</a>
+
+        <h2>Tradiciones de El Villar</h2>
+
+         <img src="img/images.jpg" alt="imagen"> 
+         <h6>Danzas típicas: el pampeño y el villarejo</h6>    
+        <p>
+        Son expresiones de la identidad cultural local que representan las costumbres y la tradición musical de la región.
+        </p>
+        <img src="img/charango.jpg" alt="imagen">
+         <h6>Música y charango</h6> 
+        <p>
+        El charango forma parte de los instrumentos tradicionales mencionados en las referencias culturales de El Villar y acompaña la expresión musical de la región.
+        </p>
+    </div>
+</div>
+
+<div id="ventana-festividades" class="ventana">
+    <div class="contenido-ventana">
+
+        <a href="#targeta" class="cerrar" aria-label="Cerrar">×</a>
+
+        <h2>Festividades</h2>
+
+        <img src="img/virgen.jpeg"
+             alt="Celebraciones locales">
+
+        <h6> Fiesta patronal de la Virgen del Rosario (7 de octubre)</h6>
+        <p>
+           Es una celebración religiosa dedicada a la Virgen del Rosario, considerada patrona del municipio.
+        </p>
+        <img src="img/caballo.jpg" alt="foto">
+        <h6>Aniversario cívico y homenaje histórico (14 de septiembre)</h6>
+        <p>
+          Se realizan actos cívicos y homenajes relacionados con Manuel Ascencio Padilla y Juana Azurduy, figuras vinculadas a la lucha por la independencia. También se recuerda la importancia histórica de la batalla del Abra de Yotala.
+        </p>
+        <img src="img/vacas.jpeg" alt="foto">
+        <h6>Feria del ganado, queso, chicha y canto de Pascua</h6>
+        <p>Es una actividad vinculada a la producción local, la gastronomía y la música tradicional, que permite mostrar productos y costumbres de El Villar.</p>
+    </div>
+</div>
+
+<div id="ventana-artes" class="ventana">
+    <div class="contenido-ventana">
+
+        <a href="#targeta" class="cerrar" aria-label="Cerrar">×</a>
+
+        <h2>Gastronomía</h2>
+
+        <selection>
+         <div1>
+            <img src="img/chicha2.jpg" alt="comida"> 
+            <h6>La Chica Villareja</h6>
+         </div1>
+       
+         <div1> 
+             <img  src="img/sajra.jpg" alt="comida">
+            <h6>La sarsa (Carnaval)</h6>
+         </div1>
+
+         <div1> 
+           <img  src="img/quesillo.jpg" alt="comida">
+             <h6>Quesillo rebosado con llajua y papa cocida.</h6>
+         </div1>
+      
+         <div1> 
+            <img  src="img/pica.jpg" alt="comida">
+            <h6>Picante de pollo criollo</h6>
+         </div1>
+       </selection>
+       <style>
+        selection{
+         display: grid;
+         grid-template-columns: repeat(2, 1fr);
+         margin-left: 20px;
+         column-gap: 25px;
+         row-gap: 50px;
+         padding: 20px;
+        }
+        .contenido-ventana img{
+        width: 300px;
+        height: 220px;
+        object-fit: cover;
+        border-radius: 10px;
+        transition: transform 0.5s, filter 0.5s;
+        border:2px solid rgb(121, 80, 19);
+      
+        
+        }
+        .contenido-ventana img:hover{
+         transform: scale(1.1);
+         filter: brightness(1.2);
+        }
+        div1{
+ 
+         background-color: orange;
+         width: 300px;
+         height: fit-content;
+         border-radius: 15px;
+         padding: 15px;
+          text-align: center;
+         box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+         transition: transform 0.4s, box-shadow 0.4s;
+         
+    
+        }
+       div1:hover{
+         transform: translateY(-10px);
+         box-shadow: 0 8px 20px rgba(0,0,0,0.4);
+        }
+        h6{
+         font-family: "Original Surfer", sans-serif;
+          font-weight: 400;
+          font-style: normal;
+         padding: 5px;
+         margin: 0;
+         font-size: 30px;
+         color: black;
+        }
+       </style>
+    </div>
+</div>
+
+</body>
+</html>
